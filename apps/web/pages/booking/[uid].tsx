@@ -257,6 +257,7 @@ export default function Success(props: SuccessProps) {
       eventType,
       date: date.toString(),
       duration: calculatedDuration,
+      bookingInfo: props.bookingInfo,
       organizer: {
         name: users[0].name || "Nameless",
         email: users[0].email || "Email-less",
