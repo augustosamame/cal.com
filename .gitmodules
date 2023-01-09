@@ -4,7 +4,7 @@
 	branch = main
 [submodule "apps/api"]
 	path = apps/api
-	url = https://github.com/calcom/api.git
+	url = https://github.com/expjazz/two_dots_cal_com_api.git
 	branch = main
 [submodule "apps/website"]
 	path = apps/website
