@@ -383,10 +383,10 @@ enum PaymentType {
 }
 
 model Payment {
-  id         Int         @id @default(autoincrement())
-  uid        String      @unique
+  id         Int     @id @default(autoincrement())
+  uid        String  @unique
   // TODO: Use an App relationship instead of PaymentType enum?
-  type       PaymentType
+  // type       PaymentType
   bookingId  Int
   amount     Int
   fee        Int
@@ -394,7 +394,7 @@ model Payment {
   success    Boolean
   refunded   Boolean
   data       Json
-  externalId String      @unique
+  externalId String  @unique
 }
 
 enum WebhookTriggerEvents {
